@@ -17,7 +17,7 @@ pipeline {
     stage('Three') {
     when {
             not {
-                 brach "master"
+                 branch "master"
                 }
      }
      
