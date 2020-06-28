@@ -10,7 +10,7 @@ pipeline {
         stage('Test-Again'){
         
         steps {
-                Input("Do you want to continue?")
+                input("Do you want to continue?")
               }
         }
       
