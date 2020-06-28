@@ -7,26 +7,27 @@ pipeline {
                    }
                }
                
-        stage('Test-Again') {
+        stage('Test-Again'){
         
         steps {
                 Input("Do you want to continue?")
               }
         }
+      
     stage('Three') {
-    when   {
-     not {
-          brach "master"
-          }
+    when {
+            not {
+                 brach "master"
+                }
      }
      
      steps {
      
         echo "Hello"
         
+          }
         }
-   }
    
-   }
+      }
    
    }                       
