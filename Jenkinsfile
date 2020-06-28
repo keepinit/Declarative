@@ -1,6 +1,6 @@
 pipeline {
   agent any
-    stage {
+    stages {
         stage('Test') {
             steps { 
                     echo "Hello, This is my first pipeline"
